@@ -1,4 +1,4 @@
-import { useNoteContext } from "@/hook/use-note-provider";
+import { useNoteContext } from "@/hook/use-note-context";
 import { Note } from "@/type/note";
 import { router } from "expo-router";
 import { useState } from "react";

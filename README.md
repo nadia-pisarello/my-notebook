@@ -43,7 +43,7 @@ context/
 components/
  └─ (coming soon)       # Reusable components (e.g., Card, Button)
 hooks/
- └─ use-note-provider.ts   # Hook for accessing the notes context
+ └─ use-note-context.ts   # Hook for accessing the notes context
 provider/
  └─ note-provider.ts      # Notes provider logic
 types/

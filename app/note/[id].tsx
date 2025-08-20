@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { View, Text, TextInput, Button, StyleSheet } from "react-native";
 import { useLocalSearchParams, router } from "expo-router";
-import { useNoteContext } from "@/hook/use-note-provider";
+import { useNoteContext } from "@/hook/use-note-context";
 
 export default function NoteDetail() {
   const { id } = useLocalSearchParams();

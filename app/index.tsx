@@ -1,4 +1,4 @@
-import { useNoteContext } from "@/hook/use-note-provider";
+import { useNoteContext } from "@/hook/use-note-context";
 import { Link } from "expo-router";
 import { FlatList, Text, View, StyleSheet } from "react-native";
 

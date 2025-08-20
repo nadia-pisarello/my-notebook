@@ -7,6 +7,7 @@ type NoteContextType = {
   removeNote: (id: string) => void;
   updateNote: (id: string, updatedNote: Partial<Note>) => void;
   getNoteById: (id: string) => Note | undefined;
+  getAllNotes: () => Note[];
 };
 export const NoteContext = createContext<NoteContextType>({
   notes: [],
@@ -14,4 +15,5 @@ export const NoteContext = createContext<NoteContextType>({
   removeNote: () => {},
   updateNote: () => {},
   getNoteById: () => undefined,
+  getAllNotes: () => [],
 });
