@@ -1,50 +1,100 @@
-# Welcome to your Expo app 👋
+# 📝 Notes App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple **notes application** built with [Expo](https://expo.dev/) and React Native.  
+Allows you to **create, view, edit, and delete notes** directly on your device.
 
-## Get started
+![Expo](https://img.shields.io/badge/Expo-000020?logo=expo&logoColor=white)
+![React Native](https://img.shields.io/badge/React%20Native-20232A?logo=react&logoColor=61DAFB)
 
-1. Install dependencies
+---
+
+## 📖 Table of Contents
+
+- [Features](#-features)
+- [Project Structure](#-project-structure)
+- [Tech Stack](#-tech-stack)
+- [Installation](#-installation)
+- [Roadmap](#-roadmap)
+
+---
+
+## ✨ Features
+
+- 📄 Create new notes with title and body
+- 👀 View details of each note
+- ✏️ Edit a note directly from its detail screen
+- ❌ Delete notes
+- 💾 _(Coming soon)_ Persist notes with `AsyncStorage`
+- 🎨 _(Coming soon)_ Improve UI with custom styles
+
+---
+
+## 📂 Project Structure
+
+```
+app/
+ ├─ _layout.tsx         # Main navigation layout
+ ├─ index.tsx           # Home screen (notes list)
+ ├─ new-note.tsx        # Screen to create a new note
+ ├─ note/[id].tsx       # Note detail/edit screen
+ └─ not-found.tsx       # Not found screen
+context/
+ └─ note-context.tsx    # Global notes context
+components/
+ └─ (coming soon)       # Reusable components (e.g., Card, Button)
+hooks/
+ └─ use-note-provider.ts   # Hook for accessing the notes context
+provider/
+ └─ note-provider.ts      # Notes provider logic
+types/
+ └─ note.ts               # Note type definition
+```
+
+---
+
+## 🛠️ Tech Stack
+
+- [Expo](https://expo.dev/)
+- [React Native](https://reactnative.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- React Context API & Hooks
+
+---
+
+## ⚡ Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone <your-repo-url>
+   cd my-notebook
+   ```
+
+2. **Install dependencies**
 
    ```bash
    npm install
    ```
 
-2. Start the app
+3. **Start the development server**
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+4. **Run on your device or emulator**
+   - Use the Expo Go app or an emulator to preview the app.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🗺️ Roadmap
 
-## Get a fresh project
+- [ ] Persist notes with `AsyncStorage`
+- [ ] Add reusable UI components
+- [ ] Improve overall UI/UX
+- [ ] Add search and filter functionality
+- [ ] Implement note categories or tags
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Feel free to contribute or suggest improvements!
